@@ -8,12 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script defer src="js/proyectoFinalContardi.js"></script>
+    <script defer src="js/variables.js"></script>
 </head>
 <body>
-<h1 id="apartado1"><span class="icon icon-library">BANCO AQUA</span></h1>
+<h1 id="apartado1"><span id="titulo" class="animate__animated.animate__bounce icon icon-library">BANCO</span></h1>
    <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">       
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">       
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Menu</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,25 +49,29 @@
    
    <section class=" container container-fluid col-12">
     <div class="sectionContacto col-12 ">
-      <form  action="enviar.php" method="post">
-        <h1 class="h2Contacto">PRESTAMO PERSONAL</h1>
-        <input type="text" name ="nombre" placeholder ="Ingrese su Nombre" required />
-        <input type="text" name="apellido" placeholder="Ingrese su Apellido" required />
-        <input type="text" name="montoSolicitado" placeholder="Ingrese Monto Solicitado" required />
-        <input type="text" name="cantidadCuotas" placeholder="Ingrese cantidad de cuotas" required /> 
-        <textarea
+      <form id="formulario"  action="enviar.php" method="post">
+        <h1 id="tituloDos" class="h2Contacto">PRESTAMO</h1>
+        <input  type="text" name ="nombre" id ="inputNombre"  placeholder ="Ingrese su Nombre" required />
+        <input  type="text" name="apellido" id = "inputApellido" placeholder="Ingrese su Apellido" required />
+        <input  type="text" name="montoSolicitado" id = "inputMonto" placeholder="Ingrese Monto Solicitado" required />
+        <input " type="text" name="cantidadCuotas" id ="inputCuota" placeholder="Ingrese Cantidad de Cuotas" required /> 
+        <!-- <textarea 
           name="Mensaje"
           placeholder="Informacion de solicitud de prestamo:"
           required
-        ></textarea>
-        <input type="submit" value="SIMULAR" id="boton" />
+        ></textarea> -->
+        
+        <input  type="submit" value="SIMULAR" id="botonSimulador" />
+        <p id="resultadoSimulador"></p>
+      
+        <input " type="submit" value="¡¡HAZ CLICK PARA SOLICITAR TU PRESTAMO!!" id="BotonSolicitar" />
       </form>
     </div>
   </section> -->
 
 <footer class="text-center text-white" style="background-color: #f1f1f1;">
       <!-- Copyright -->
-      <div >
+      <div>
         © 2020 Copyright:
         <a>Desarrollador Claudio Contardi / Prof: Fernando Luna / Lenguaje: JavaScript</a>
       </div>
