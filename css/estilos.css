@@ -20,7 +20,10 @@
       
       }
 
-      ::placeholder { color: rgb(215, 216, 233) } 
+      ::placeholder { color: white } 
+      th {
+        color: white;
+      }
       
       form {
         width: 750px;
@@ -85,13 +88,21 @@
         max-height: 200px;
       }
     
+      button {
+        background: #31384a;
+        color: #fff;
+        margin: 10px;
+        margin-right: 10px;
+       
+      }
+
       #boton {
         background: #31384a;
         color: #fff;
         padding: 20px;
       }
     
-      #boton:hover {
+      #boton , button:hover {
         cursor:pointer;
       }
       footer {

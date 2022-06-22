@@ -28,7 +28,7 @@
 //             const resultado = (this.monto * this.intereses) / this.cuotas
 //                 return parseFloat(resultado.toFixed(2))
 //         }
-        
+
 //     }
 // }
 
@@ -43,7 +43,7 @@
 //     apellido = prompt ("ingrese su apellido")
 //     monto = parseInt(prompt("Ingresa el monto a solicitar:"))
 //     cuotas = parseInt(prompt("¿que cuota prefieres? 1/ 3/ 6/ 12"))
-    
+
 //     const prestamoSolcitado = new Prestamo(nombre, apellido, monto, cuotas)
 //     const prestamoAprobado = prestamoSolcitado.prestamoAprobado()
 //     console.log("Valor de cuota a pagar, es: ARS", prestamoAprobado)
@@ -59,16 +59,52 @@
 
 titulo.innerText = "BANCO AQUA"   //! modifique titulo en html
 tituloDos.innerText = "PRESTAMO PERSONAL" //! modifique titulo en html
-resultadoSimulador.innerHTML =""
 
 
 
+irFormulario.addEventListener('click', () => {
+    alert("en espera de formulario")
+})
+menu.addEventListener('click', () => {
+    alert("Menu ILUSTRATIVO")
+})
 
-// function botonSimulador () 
-//     formulario.reset();
-// }
+btnCalcular.addEventListener('click', () => {
+    // debugger
+    if (monto.value === '' || cuotas.value === '' || interes.value === '') {
+        alerta.hidden = false;
+        setTimeout(() => {
+            alerta.hidden = true;
+        }, 2000);
+    } else {
+        calcularCronograma(monto.value, interes.value, cuotas.value);
+    }
+})
 
-  
+function calcularCronograma(monto, interes, cuotas) {
+
+    while (llenarTabla.firstChild) {
+        llenarTabla.removeChild(llenarTabla.firstChild);
+    }
+
+    let amortizacionConstante, pagoInteres, cuota;
+    amortizacionConstante = monto / cuotas;
+    for (let i = 1; i <= cuotas; i++) {
+        pagoInteres = monto * (interes / 100);
+        cuota = amortizacionConstante + pagoInteres;
+        monto = monto - amortizacionConstante;
+
+        const rowt = document.createElement('tr');
+        rowt.innerHTML = `
+            <td>${amortizacionConstante.toFixed(2)}</td>
+            <td>${pagoInteres.toFixed(2)}</td>
+            <td>${cuota.toFixed(2)}</td>
+            <td>${monto.toFixed(2)}</td>
+        `;
+        llenarTabla.appendChild(rowt);
+
+    }
+}
 
 
 

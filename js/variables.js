@@ -1,22 +1,19 @@
-let inputNombre = "ingrese nombre";
-let inputApellido = "ingrese apellido"
-let inputMonto = 0
-let inputCuota = 0
-let interes = 1.45
+let inputNombre = "ingrese nombre";//**utilizar en formulario */
+let inputApellido = "ingrese apellido"//**utilizar en formulario */
+let mouse = document.getElementById('mouse')
+// const inforNombre = document.getElementById("inforNombre")  //**para usar con la funcion VALUE (INFORMACION DE DATOS INGRESADOS) */
+// const inforApellido = document.getElementById("inforApellido") //**para usar con la funcion VALUE (INFORMACION DE DATOS INGRESADOS) */
+// const inforMonto = document.getElementById("inforMonto") //**para usar con la funcion VALUE (INFORMACION DE DATOS INGRESADOS) */
+// const inforCuota = document.getElementById("inforCuota") //**para usar con la funcion VALUE (INFORMACION DE DATOS INGRESADOS) */
+// const inforIntereses = document.getElementById("inforCuota") //**para usar con la funcion VALUE (INFORMACION DE DATOS INGRESADOS) */
 
-
-const titulo = document.getElementById("titulo")
-const tituloDos = document.getElementById("tituloDos")
-const resultadoSimulador = document.getElementById("resultadoSimulador")
-const botonSimulador = document.getElementById("botonSimulador")
-
-
-const formulario = document.getElementById("formulario")
-
-const inforNombre = document.getElementById("inputNombre")  //**para usar con la funcion VALUE (INFORMACION DE DATOS INGRESADOS) */
-const inforApellido = document.getElementById("inputApellido") //**para usar con la funcion VALUE (INFORMACION DE DATOS INGRESADOS) */
-const inforMonto = document.getElementById("inputMonto") //**para usar con la funcion VALUE (INFORMACION DE DATOS INGRESADOS) */
-const inforCuota = document.getElementById("inputCuota") //**para usar con la funcion VALUE (INFORMACION DE DATOS INGRESADOS) */
-
-
-
+const titulo = document.getElementById('titulo')
+const tituloDos = document.getElementById('tituloDos')
+const monto = document.getElementById('monto');
+const cuotas = document.getElementById('cuotas');
+const interes = document.getElementById('interes');
+const btnCalcular = document.getElementById('btnCalcular');
+const alerta = document.getElementById('alert-error');
+const llenarTabla = document.querySelector('#lista-tabla tbody')
+const irfomulario = document.getElementById('irFormulario')
+const menu= document.getElementById('menu')
