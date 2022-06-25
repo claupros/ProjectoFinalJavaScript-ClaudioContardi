@@ -1,6 +1,6 @@
 
 
-//! 👇👇👇👇👇👇👇MATERIAL DE APOYO NO ACTIVAR COMENTARIOS👇👇👇👇👇👇👇/
+//! MATERIAL DE APOYO EJEMPLOS NO ACTIVAR 👇👇👇👇👇👇👇👇
 
 // class Prestamo {
 //     constructor(nombre, apellido, monto, cuotas) {
@@ -53,24 +53,27 @@
 // let input2  = document.getElementById("apellido");
 // input1.onchange = () => {console.log("valor1")};
 // input2.onchange = () => {console.log("valor2")};
-//! 👆👆👆👆👆👆👆MATERIAL DE APOYO NO ACTIVAR COMENTARIOS👆👆👆👆👆👆👆/
+
+//! MATERIAL DE APOYO EJEMPLOS NO ACTIVAR 👆👆👆👆👆👆👆👆
 
 
+titulo.innerText = "BANCO AQUA"
+tituloDos.innerText = "PRESTAMO PERSONAL"
 
-titulo.innerText = "BANCO AQUA"   //! modifique titulo en html
-tituloDos.innerText = "PRESTAMO PERSONAL" //! modifique titulo en html
-
-
-
-irFormulario.addEventListener('click', () => {
-    alert("en espera de formulario")
-})
-menu.addEventListener('click', () => {
+menu.addEventListener('click', () => {  //*ejemplo addEventListener*/
+    monto.value = ""
     alert("Menu ILUSTRATIVO")
 })
 
+irFormulario.addEventListener('click', () => { //*ejemplo addEventListener*/
+    monto.value = ""
+    cuotas.value = ""
+    interes.value = ""
+})
+
+
 btnCalcular.addEventListener('click', () => {
-    // debugger
+    //debugger
     if (monto.value === '' || cuotas.value === '' || interes.value === '') {
         alerta.hidden = false;
         setTimeout(() => {
@@ -105,7 +108,6 @@ function calcularCronograma(monto, interes, cuotas) {
 
     }
 }
-
 
 
 

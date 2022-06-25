@@ -56,15 +56,6 @@
         text-align: center;
      }
 
-     .animate__animated.animate__bounce {
-      --animate-duration: 2s;
-    }
-
-    :root {
-      --animate-duration: 800ms;
-      --animate-delay: 0.9s;
-    }
-
       .h2Contacto {
         color: #fff;
         text-align: center;
@@ -83,12 +74,11 @@
         border: none;
       }
     
-      textarea {
-        min-height: 100px;
-        max-height: 200px;
-      }
+     .borde {
+      border-color: #fff;
+     }
     
-      button {
+      button , a {
         background: #31384a;
         color: #fff;
         margin: 10px;
@@ -110,4 +100,9 @@
         height: 100%;
         padding: 20px;
         text-shadow: 10px 10px 5px black;
+      }
+
+      .tablaFinal{
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
       }

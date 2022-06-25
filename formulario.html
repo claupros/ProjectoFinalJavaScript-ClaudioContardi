@@ -2,9 +2,9 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <title>FORMULARIO</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Final Claudio Contardi</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,12 +17,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script defer src="js/proyectoFinalContardi.js"></script>
-    <script defer src="js/variables.js"></script>
+    <script defer src="js/formularioFinal.js"></script>
+    <script defer src="js/variablesForm.js"></script>
   </head>
   <body>
     <h1 id="apartado1">
-      <span id="titulo" class="icon icon-library">BANCO</span>
+      <span
+        id="titulo"
+        class="animate__animated.animate__bounce icon icon-library"
+        >BANCO</span
+      >
     </h1>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -77,50 +81,21 @@
         </div>
       </nav>
     </header>
-    <section class="rowt container container-fluid col-12">
-      <div class="sectionContacto col-12">
-        <form action="enviar.php" method="post">
-          <h1 id="tituloDos" class="h2Contacto">PRESTAMO</h1>
-          <input
-            type="text"
-            name="montoSolicitado"
-            id="monto"
-            placeholder="Ingrese Monto Solicitado"
-            required
-          />
-          <input " type="text" name="cantidadCuotas" id ="cuotas"
-          placeholder="Ingrese Cantidad de Cuotas" required />
-          <input
-            type="text"
-            name="intereses"
-            id="interes"
-            placeholder="Ingrese Interés Mensual %"
-            required
-          />
-          <table id="lista-tabla" class="table">
-            <thead>
-              <tr>
-                <th>Amortización</th>
-                <th>Interés</th>
-                <th>Cuota</th>
-                <th>Monto</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-          <a id="btnCalcular" class="btn btn-primary" href="#" role="button"
-            >CALCULAR</a
-          >
-          <a
-            id="irFormulario"
-            class="btn btn-primary"
-            href="formulario.html"
-            role="button"
-            >¡¡HAZ CLICK PARA SOLICITAR TU PRESTAMO!!</a
-          >
-        </form>
-      </div>
-    </section>
+    <div></div>
+    <form id="btnSubmit" action="#" class="color-formulario z-depth-2">
+      <h1 id="tituloDos" class="h2Contacto"></h1>
+      <input type="text" id="inputNombre" placeholder="Ingrese su nombre" />
+      <input type="text" id="inputApellido" placeholder="Ingrese su apellido" />
+      <input type="tel" id="inputTelefono" placeholder="Su teléfono móvil" />
+      <input type="email" id="inputEmail" placeholder="Correo electrónico" />
+      <a
+        id="finish"
+        class="btn btn-primary"
+        href="./finSimulador.html"
+        role="button"
+        >ENVIAR</a
+      >
+    </form>
     <footer class="text-center text-white" style="background-color: #f1f1f1">
       <!-- Copyright -->
       <div>
@@ -132,7 +107,6 @@
       </div>
       <!-- Copyright -->
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
