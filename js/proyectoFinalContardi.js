@@ -54,34 +54,67 @@
 // input1.onchange = () => {console.log("valor1")};
 // input2.onchange = () => {console.log("valor2")};
 
-//! MATERIAL DE APOYO EJEMPLOS NO ACTIVAR 👆👆👆👆👆👆👆👆
+//! libreria probar en el codigo👇
+// const swa = ()=> {
+//     Swal.fire({
+//         title: 'complete los campos',
+//         // text: 'No se encontró el servidor remoto',
+//         // icon: 'error',
+//         confirmButtonText: 'Ouch'
+//       })
+// }
 
+// const toastSA = (mensaje, bgColor, tiempo)=> {
+//     Swal.fire({
+//         icon: 'error',
+//         title: mensaje,
+//         position: 'top-end',
+//         showConfirmButton: false,
+//         toast: true,
+//         timer: tiempo || 3000,
+//         timerProgressBar: true,
+//         background: bgColor || 'white',
+//         color: '#ffffff'
+//     })
+// }
+//***PRACTICA */
+// let username = "coderhouse"
+
+// if (username === "cosderhouse") {
+//     alert("bienvenido" + username)
+// }
+// else {
+//         alert ("no se reconoce")
+// }
+
+//*** codigo simplificado   operador ternario*/ */
+//username ==="cosderhouse" ? alert("bienvenido" + username) : alert ("no se recconoce") //*opcion 2
+//let mensaje = username ==="coderhouse" ? "bienvenido" + username : "no se recconoce" //*opcion 3
+//alert(mensaje)
+//! MATERIAL DE APOYO EJEMPLOS NO ACTIVAR 👆👆👆👆👆👆👆👆
 
 titulo.innerText = "BANCO AQUA"
 tituloDos.innerText = "PRESTAMO PERSONAL"
 
-menu.addEventListener('click', () => {  //*ejemplo addEventListener*/
-    monto.value = ""
-    alert("Menu ILUSTRATIVO")
+menu.addEventListener('click', () => {  //*UTILIZANDO LIBRERIA PARA CUADRO DE ALERTA*/
+    Swal.fire({
+        title: 'Menu ILUSTRATIVO',
+        width: 400,
+        icon: 'warning',
+        color: '#ffffff',
+        confirmButtonText: 'ok',
+    })
 })
 
-irFormulario.addEventListener('click', () => { //*ejemplo addEventListener*/
-    monto.value = ""
-    cuotas.value = ""
-    interes.value = ""
-})
-
-
-btnCalcular.addEventListener('click', () => {
+btnCalcular.addEventListener('click', () => { //*UTILIZANDO LIBRERIA PARA CUADRO DE ALERTA*/
     //debugger
-    if (monto.value === '' || cuotas.value === '' || interes.value === '') {
-        alerta.hidden = false;
-        setTimeout(() => {
-            alerta.hidden = true;
-        }, 2000);
-    } else {
-        calcularCronograma(monto.value, interes.value, cuotas.value);
-    }
+    monto.value === '' || cuotas.value === '' || interes.value === '' ? //*CODIGO SIMPLIFICADO*/
+        Swal.fire({
+            title: 'Complete los campos para continuar',
+            icon: 'warning',
+            confirmButtonText: 'Ok',
+            color: '#ffffff',
+        }) : calcularCronograma(monto.value, interes.value, cuotas.value) //*CODIGO SIMPLIFICADO*/
 })
 
 function calcularCronograma(monto, interes, cuotas) {
@@ -90,6 +123,7 @@ function calcularCronograma(monto, interes, cuotas) {
         llenarTabla.removeChild(llenarTabla.firstChild);
     }
 
+    let mesActual = dayjs().add(1, 'month')
     let amortizacionConstante, pagoInteres, cuota;
     amortizacionConstante = monto / cuotas;
     for (let i = 1; i <= cuotas; i++) {
@@ -97,8 +131,12 @@ function calcularCronograma(monto, interes, cuotas) {
         cuota = amortizacionConstante + pagoInteres;
         monto = monto - amortizacionConstante;
 
+        let fecha = mesActual.format('DD-MM-YYYY')
+        mesActual = mesActual.add(1, 'month')
+
         const rowt = document.createElement('tr');
         rowt.innerHTML = `
+            <td>${fecha}</td>
             <td>${amortizacionConstante.toFixed(2)}</td>
             <td>${pagoInteres.toFixed(2)}</td>
             <td>${cuota.toFixed(2)}</td>
@@ -108,8 +146,6 @@ function calcularCronograma(monto, interes, cuotas) {
 
     }
 }
-
-
 
 
 

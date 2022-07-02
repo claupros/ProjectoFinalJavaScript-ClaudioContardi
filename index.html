@@ -13,12 +13,15 @@
     />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="style.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    /> -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script defer src="js/proyectoFinalContardi.js"></script>
     <script defer src="js/variables.js"></script>
+    <script defer src="js/dayjs.min.js"></script>
   </head>
   <body>
     <h1 id="apartado1">
@@ -81,25 +84,26 @@
       <div class="sectionContacto col-12">
         <form action="enviar.php" method="post">
           <h1 id="tituloDos" class="h2Contacto">PRESTAMO</h1>
-          <input
+          <input class="form-select"
             type="text"
             name="montoSolicitado"
             id="monto"
             placeholder="Ingrese Monto Solicitado"
             required
           />
-          <input " type="text" name="cantidadCuotas" id ="cuotas"
+          <input class="form-select" type="text" name="cantidadCuotas" id ="cuotas"
           placeholder="Ingrese Cantidad de Cuotas" required />
-          <input
+          <input class="form-select"
             type="text"
             name="intereses"
             id="interes"
             placeholder="Ingrese Interés Mensual %"
             required
           />
-          <table id="lista-tabla" class="table">
+          <table id="lista-tabla" class="tablaFinal table">
             <thead>
               <tr>
+                <th>Fecha</th>
                 <th>Amortización</th>
                 <th>Interés</th>
                 <th>Cuota</th>

@@ -13,18 +13,24 @@
     .sectionContacto {
         background-image: url("https://th.bing.com/th/id/R.9f824bb9a7578ec407716d92d54da16d?rik=psgxIxEgNCwerQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f11%2fFondos-para-paginas-web-grandes.jpg&ehk=7oK%2fufiVrkzdOWJ062DDRxx6hgfmM%2bsTHNYBNav4JCA%3d&risl=&pid=ImgRaw&r=0");
         background-size: 100vw 100vh;
-        background-attachment:fixed;
+        /* background-attachment:fixed; */
         margin: 0;
         max-width: 100%;
         max-height: 100%; 
       
       }
 
-      ::placeholder { color: white } 
+      ::placeholder { color: black } 
       th {
         color: white;
-      }
+      } 
       
+      .container{
+      display:flex;
+      align-items: center;
+      justify-content:center;
+      flex-direction: column;
+     }
       form {
         width: 750px;
         margin: auto;
@@ -104,5 +110,6 @@
 
       .tablaFinal{
         font-family: 'Playfair Display', serif;
-        font-size: 40px;
+       color: #ffffff;
+        padding: 100px 100px;
       }

@@ -1,30 +1,31 @@
-titulo.innerText = "BANCO AQUA"   
-tituloDos.innerText = "FINALIZAR PEDIDO" 
-tituloTres.innerText = "💲BANCO AQUA Le da las Gracias por elegirnos, nos comunicaremos a la brevedad💲"
+titulo.innerText = "BANCO AQUA"
+tituloDos.innerText = "FINALIZAR PEDIDO"
 
 const focoEnCampos = () => {
     const campos = document.querySelectorAll("input")
     for (let campo of campos) {
-        if (campo.type != "submit") {
-            campo.addEventListener("focus", ()=> campo.className = "fondo-inputs")
-            campo.addEventListener("blur", ()=> campo.className = "")
+        if (campo.type != "button") {
+            campo.addEventListener("focus", () => campo.className = "form-select")
+            campo.addEventListener("blur", () => campo.className = "")
         }
     }
 }
 focoEnCampos()
 
-btnSubmit.addEventListener("mousemove", ()=> {
-    btnSubmit.title = "Complete los datos antes de ENVIAR"
+menu.addEventListener('click', () => { //*UTILIZANDO LIBRERIA PARA CUADRO DE ALERTA*/
+    Swal.fire({
+        title: 'Menu ILUSTRATIVO',
+        width: 400,
+        icon: 'warning',
+        color: '#ffffff',
+        confirmButtonText: 'ok'
+    })
+
 })
 
-menu.addEventListener('click', () => {
-    alert("Menu ILUSTRATIVO")
-})
-
-document.addEventListener("submit", (e) => {
+document.addEventListener("button", (e) => {
     e.preventDefault()
     guardarDatosUsuario()
-    alert(`💲Gracias por su elegirnos 💲😃`)
 })
 
 function guardarDatosUsuario() {
@@ -35,7 +36,7 @@ function guardarDatosUsuario() {
         email: inputEmail.value,
     }
     let aTexto = JSON.stringify(datosUsuario)
-     localStorage.setItem("registroUsr", aTexto)
+    localStorage.setItem("registroUsr", aTexto)
 }
 
 function recuperoDatosUsuario() {
@@ -44,15 +45,12 @@ function recuperoDatosUsuario() {
         inputNombre.value = datosUsuario.nombre
         inputApellido.value = datosUsuario.apellido
         inputTelefono.value = datosUsuario.telefono
-        inputEmail.value = datosUsuario.email     
+        inputEmail.value = datosUsuario.email
     }
-    
+
 }
 
 recuperoDatosUsuario()
-
-
-
 
 
 //! MATERIAL DE APOYO EJEMPLOS NO ACTIVAR 👇👇👇👇👇👇👇👇
@@ -65,7 +63,7 @@ recuperoDatosUsuario()
 // inputApellido.value = localStorage.getItem("Apellido")//*********RECUPERA LOS DATOS GUARDADOS */
 // inputTelefono.value = localStorage.getItem("Telefono")//*********RECUPERA LOS DATOS GUARDADOS */
 // inputEmail.value = localStorage.getItem("Email")//*********RECUPERA LOS DATOS GUARDADOS */
-// JSON.stringify //*(convierte a cadena de texto los datros guardados ejemplo: [object Object] lo pasa: {"nombre":"Esteban","apellido":"Rojas","telefono":"66666666","email":"quiensoy@loco.net"}*/	
+// JSON.stringify //*(convierte a cadena de texto los datros guardados ejemplo: [object Object] lo pasa: {"nombre":"Esteban","apellido":"Rojas","telefono":"66666666","email":"quiensoy@loco.net"}*/
 // JSON.parse //*(el ejemplo de stringify pero a la inversa)*/
 //! MATERIAL DE APOYO EJEMPLOS NO ACTIVAR 👆👆👆👆👆👆👆👆
 

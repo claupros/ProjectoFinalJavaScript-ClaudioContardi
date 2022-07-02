@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="js/formularioFinal.js"></script>
     <script defer src="js/variablesForm.js"></script>
   </head>
@@ -82,28 +83,61 @@
       </nav>
     </header>
     <div></div>
-    <form id="btnSubmit" action="#" class="color-formulario z-depth-2">
+    <form
+      id="btnSubmit"
+      action="#"
+      method="post"
+      class="needs-validation color-formulario"
+    >
       <h1 id="tituloDos" class="h2Contacto"></h1>
-      <input type="text" id="inputNombre" placeholder="Ingrese su nombre" />
-      <input type="text" id="inputApellido" placeholder="Ingrese su apellido" />
-      <input type="tel" id="inputTelefono" placeholder="Su teléfono móvil" />
-      <input type="email" id="inputEmail" placeholder="Correo electrónico" />
+      <input
+        class="form-select"
+        type="text"
+        name="Nombre"
+        id="inputNombre"
+        placeholder="Ingrese su nombre"
+        required
+      />
+      <input
+        class="form-select"
+        type="text"
+        name="Apellido"
+        id="inputApellido"
+        placeholder="Ingrese su apellido"
+        required
+      />
+      <input
+        class="form-select"
+        type="text"
+        name="Telefono"
+        id="inputTelefono"
+        placeholder="Su teléfono móvil"
+        required
+      />
+      <input
+        class="form-select"
+        type="text"
+        name="Correo"
+        id="inputEmail"
+        placeholder="Correo electrónico"
+        required
+      />
       <a
+        class="container btn btn-primary"
         id="finish"
-        class="btn btn-primary"
-        href="./finSimulador.html"
+        href="formularioDos.html"
         role="button"
-        >ENVIAR</a
+        >FINALIZAR</a
       >
     </form>
     <footer class="text-center text-white" style="background-color: #f1f1f1">
       <!-- Copyright -->
       <div>
         © 2020 Copyright:
-        <p
-          >Desarrollador Claudio Contardi / Prof: Fernando Luna / Lenguaje:
-          JavaScript</p
-        >
+        <p>
+          Desarrollador Claudio Contardi / Prof: Fernando Luna / Lenguaje:
+          JavaScript
+        </p>
       </div>
       <!-- Copyright -->
     </footer>
