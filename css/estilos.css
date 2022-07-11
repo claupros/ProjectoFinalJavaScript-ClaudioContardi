@@ -1,115 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-image: url(https://th.bing.com/th/id/OIP.L0YeqKXfaU1qYVUsPnp76QHaFq?pid=ImgDet&rs=1);
-    background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* background-attachment: fixed;
     background-size: 100% 100%;
+    ;background-color: #ffffff; */
 }
 
+body {
+  background-image: url(../img/fondo1.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
 
- */
+/* nav {
+   background-image: url("https://www.solofondos.com/wp-content/uploads/2015/11/Imagen-de-fondo-html.jpg");
+ 
+   background-color: transparent !important;
+ } */
+.header .navbar {
+  /* background-image: url("https://www.solofondos.com/wp-content/uploads/2015/11/Imagen-de-fondo-html.jpg"); */
+  background-color: transparent !important;
+  margin-bottom: 3%;
+}
+.sectionContacto {
+  background-image: url("https://th.bing.com/th/id/R.9f824bb9a7578ec407716d92d54da16d?rik=psgxIxEgNCwerQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f11%2fFondos-para-paginas-web-grandes.jpg&ehk=7oK%2fufiVrkzdOWJ062DDRxx6hgfmM%2bsTHNYBNav4JCA%3d&risl=&pid=ImgRaw&r=0");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
 
-    .sectionContacto {
-        background-image: url("https://th.bing.com/th/id/R.9f824bb9a7578ec407716d92d54da16d?rik=psgxIxEgNCwerQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f11%2fFondos-para-paginas-web-grandes.jpg&ehk=7oK%2fufiVrkzdOWJ062DDRxx6hgfmM%2bsTHNYBNav4JCA%3d&risl=&pid=ImgRaw&r=0");
-        background-size: 100vw 100vh;
-        /* background-attachment:fixed; */
-        margin: 0;
-        max-width: 100%;
-        max-height: 100%; 
-      
-      }
+::placeholder {
+  color: black;
+}
+th {
+  color: white;
+}
 
-      ::placeholder { color: black } 
-      th {
-        color: white;
-      } 
-      
-      .container{
-      display:flex;
-      align-items: center;
-      justify-content:center;
-      flex-direction: column;
-     }
-      form {
-        width: 750px;
-        margin: auto;
-        background: rgba(0, 0, 0, 0.4);
-        padding: 150px 150px;
-        box-sizing: border-box;
-        margin-top: 20px;
-        border-radius: 7px;
-        font-family: monospace;
-        background-image: url("https://th.bing.com/th/id/R.9f824bb9a7578ec407716d92d54da16d?rik=psgxIxEgNCwerQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f11%2fFondos-para-paginas-web-grandes.jpg&ehk=7oK%2fufiVrkzdOWJ062DDRxx6hgfmM%2bsTHNYBNav4JCA%3d&risl=&pid=ImgRaw&r=0");
-        background-attachment:fixed;
-        animation: 3s ease 0s 1 normal none running fadeUp;
-        box-shadow: 6px 20px 10px black; 
-      }
-    
-      .prueba{
-        animation: 3s ease 0s 1 normal none running fadeUp;
-          background: linear-gradient(rgb(136, 61, 242), transparent);
-          border-radius: 5px;
-          padding: 10px;
-          transition: all 0.2s ease 0s;
-          cursor: default;
-      }
-      #apartado1 {
-        text-shadow: 10px 10px 5px gray;
-        color:white;
-        font-size: 80px;
-        border-style:solid;
-        text-align: center;
-     }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form {
+  width: 750px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 150px 150px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+  font-family: monospace;
+  background-image: url("https://th.bing.com/th/id/R.9f824bb9a7578ec407716d92d54da16d?rik=psgxIxEgNCwerQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f11%2fFondos-para-paginas-web-grandes.jpg&ehk=7oK%2fufiVrkzdOWJ062DDRxx6hgfmM%2bsTHNYBNav4JCA%3d&risl=&pid=ImgRaw&r=0");
+  background-attachment: fixed;
+  animation: 3s ease 0s 1 normal none running fadeUp;
+  box-shadow: 6px 20px 10px black;
+}
 
-      .h2Contacto {
-        color: #fff;
-        text-align: center;
-        margin: 0;
-        font-size: 30px;
-        margin-bottom: 20px;
-      }
-    
-      input,
-    textarea {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 7px;
-        box-sizing: border-box;
-        font-size: 17px;
-        border: none;
-      }
-    
-     .borde {
-      border-color: #fff;
-     }
+.prueba {
+  animation: 3s ease 0s 1 normal none running fadeUp;
+  background: linear-gradient(rgb(136, 61, 242), transparent);
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.2s ease 0s;
+  cursor: default;
+}
+#apartado1 {
+  text-shadow: 10px 10px 5px gray;
+  color: white;
+  font-size: 80px;
+  border-style: solid;
+  text-align: center;
+}
 
-      button, a {
-        background: #31384a;
-        color: #fff;
-        margin: 10px;
-        margin-right: 10px;
-       
-      }
+.h2Contacto {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 
-      #boton {
-        background: #31384a;
-        color: #fff;
-        padding: 20px;
-      }
-    
-      #boton , button:hover {
-        cursor:pointer;
-      }
-      footer {
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-        text-shadow: 10px 10px 5px black;
-      }
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
 
-      .tablaFinal{
-        font-family: 'Playfair Display', serif;
-       color: #ffffff;
-        padding: 100px 100px;
-      }
+.borde {
+  border-color: #fff;
+}
+
+button,
+a {
+  background: #31384a #3e60e9;
+  color: #fff;
+  margin: 10px;
+  margin-right: 10px;
+}
+
+#boton {
+  background: #31384a;
+  color: #fff;
+  padding: 20px;
+}
+
+#boton,
+button:hover {
+  cursor: pointer;
+}
+footer {
+  /* background-image: url("https://www.solofondos.com/wp-content/uploads/2015/11/Imagen-de-fondo-html.jpg"); */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-shadow: 10px 10px 5px black;
+  background-color: black;
+  margin-top: 3%;
+  background-color: transparent !important;
+}
+
+.tablaFinal {
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  padding: 100px 100px;
+}
+
+.popup-class {
+  /* background-image: url(../img/fondo4.jpg); */
+  /* background: linear-gradient(rgb(136, 61, 242), transparent); */
+  box-shadow: 15px 30px 10px black;
+  border-radius: 10px;
+  padding: 25px 20px 60px;
+  text-align: center;
+  cursor: default;
+  transition: all 0.2s ease 0s;
+  animation: 1.5s ease 0s 1 normal none running fadeIn;
+}
+/* .popup-class:hover {
+        box-shadow: rgb(136 61 242) 4px 4px, rgb(177 80 242) 6px 6px, rgb(215 98 217) 8px 8px;
+          transform: translateX(-3px);
+      } */
+
+.parent {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.parent:hover {
+  /* transform: perspective(200px) rotateY(360deg); */ /*efecto rotacion*/
+  transform: scale(1.1);
+}
+.absolute {
+  position: fixed;
+  top: 20%;
+  left: 50px;
+  width: 15%;
+  height: 15%;
+}

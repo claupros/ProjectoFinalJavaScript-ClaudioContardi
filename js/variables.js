@@ -19,3 +19,20 @@ const llenarTabla = document.querySelector('#lista-tabla tbody')
 const irfomulario = document.getElementById('irFormulario')
 const menu = document.getElementById('menu')
 
+const contenidoDOM = document.querySelector("#contenido")
+const cargandoDOM = document.querySelector("#cargando")
+
+const URL = `js/publicidad.json`
+//const URL = 'http://localhost:3050/trailerflix/'
+//const URL = `https://api.algunservidorremoto.com.au/pelis.json`
+
+/*
+AJAX
+
+const xhr = new XMLHttpRequest()
+
+$.AJAX()
+
+FETCH()
+
+*/

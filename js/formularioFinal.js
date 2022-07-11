@@ -12,15 +12,22 @@ const focoEnCampos = () => {
 }
 focoEnCampos()
 
-menu.addEventListener('click', () => { //*UTILIZANDO LIBRERIA PARA CUADRO DE ALERTA*/
+menu.addEventListener('click', () => {  //*UTILIZANDO LIBRERIA PARA CUADRO DE ALERTA*/
     Swal.fire({
+        background: "#D7E1EC",
         title: 'Menu ILUSTRATIVO',
-        width: 400,
+        // width: '25%',
         icon: 'warning',
-        color: '#ffffff',
-        confirmButtonText: 'ok'
+        color: 'whith',
+        timer: 3000,
+        showConfirmButton: false,
+        toast: true,
+        position: 'top-end',
+        // confirmButtonText: 'ok',
+        customClass: {
+            popup: 'popup-class',
+        }
     })
-
 })
 
 document.addEventListener("button", (e) => {
@@ -52,6 +59,188 @@ function recuperoDatosUsuario() {
 
 recuperoDatosUsuario()
 
+//***** ALERTA 1 publicidad formularioFinal *******/
+
+Swal.fire({   /** anuncio */
+    title: 'Camara SONY',
+    // text:
+    // html:'<div id="contenido" class="parent absolute row bottom-0"></div>',
+    icon: undefined,
+    // confirmButtonText:
+    footer: 'Anuncio',
+    width: '300px',
+    padding: '1rem',
+    background: '#fff',
+    grow: false,
+    backdrop: false,
+    timer: 5000,
+    timerProgressBar: true,
+    toast: false,
+    position: 'bottom-end',
+    allowOutsideClick: false,
+    allowEscapeKey: false,
+    // allowEnterKey:
+    stopKeydownPropagation: false,
+    // input:
+    // inputPlaceholder:
+    // inputValue:
+    // inputOptions:
+    //  customClass:
+    // 	container:
+    // 	popup:
+    // 	header:
+    // 	title:
+    // 	closeButton:
+    // 	icon:
+    // 	image:
+    // 	content:
+    // 	input:
+    // 	actions:
+    // 	confirmButton:
+    // 	cancelButton:
+    // 	footer:	
+
+    showConfirmButton: false,
+    // confirmButtonColor:
+    // confirmButtonAriaLabel:
+
+    showCancelButton: false,
+    // cancelButtonText:
+    // cancelButtonColor:
+    // cancelButtonAriaLabel:
+
+    // buttonsStyling:
+    showCloseButton: true,
+    closeButtonAriaLabel: 'cerrar esta alerta',
+
+
+    imageUrl: 'img/Camara.png',
+    imageWidth: '100%',
+    // imageHeight:
+    imageAlt: 'imagen de una camara fotografica',
+});
+
+//***** ALERTA 2 publicidad formularioFinal *******/
+setTimeout(() => {
+    Swal.fire({   /** anuncio */
+        title: 'Alimento Balanceado',
+        // text:
+        // html:'<div id="contenido" class="parent absolute row bottom-0"></div>',
+        icon: undefined,
+        // confirmButtonText:
+        footer: 'Anuncio',
+        width: '300px',
+        padding: '1rem',
+        background: '#fff',
+        grow: false,
+        backdrop: false,
+        timer: 5000,
+        timerProgressBar: true,
+        toast: false,
+        position: 'top-end',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        // allowEnterKey:
+        stopKeydownPropagation: false,
+        // input:
+        // inputPlaceholder:
+        // inputValue:
+        // inputOptions:
+        //  customClass:
+        // 	container:
+        // 	popup:
+        // 	header:
+        // 	title:
+        // 	closeButton:
+        // 	icon:
+        // 	image:
+        // 	content:
+        // 	input:
+        // 	actions:
+        // 	confirmButton:
+        // 	cancelButton:
+        // 	footer:	
+
+        showConfirmButton: false,
+        // confirmButtonColor:
+        // confirmButtonAriaLabel:
+
+        showCancelButton: false,
+        // cancelButtonText:
+        // cancelButtonColor:
+        // cancelButtonAriaLabel:
+
+        // buttonsStyling:
+        showCloseButton: true,
+        closeButtonAriaLabel: 'cerrar esta alerta',
+
+
+        imageUrl: 'img/alimento.png',
+        imageWidth: '100%',
+        // imageHeight:
+        imageAlt: 'imagen de producto alimenticio',
+    })
+}, 6000);
+setInterval(() => {
+    Swal.fire({   /** anuncio */
+        title: 'Camara SONY',
+        // text:
+        // html:'<div id="contenido" class="parent absolute row bottom-0"></div>',
+        icon: undefined,
+        // confirmButtonText:
+        footer: 'Anuncio',
+        width: '300px',
+        padding: '1rem',
+        background: '#fff',
+        grow: false,
+        backdrop: false,
+        timer: 5000,
+        timerProgressBar: true,
+        toast: false,
+        position: 'bottom-end',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        // allowEnterKey:
+        stopKeydownPropagation: false,
+        // input:
+        // inputPlaceholder:
+        // inputValue:
+        // inputOptions:
+        //  customClass:
+        // 	container:
+        // 	popup:
+        // 	header:
+        // 	title:
+        // 	closeButton:
+        // 	icon:
+        // 	image:
+        // 	content:
+        // 	input:
+        // 	actions:
+        // 	confirmButton:
+        // 	cancelButton:
+        // 	footer:	
+
+        showConfirmButton: false,
+        // confirmButtonColor:
+        // confirmButtonAriaLabel:
+
+        showCancelButton: false,
+        // cancelButtonText:
+        // cancelButtonColor:
+        // cancelButtonAriaLabel:
+
+        // buttonsStyling:
+        showCloseButton: true,
+        closeButtonAriaLabel: 'cerrar esta alerta',
+
+
+        imageUrl: 'img/Camara.png',
+        imageWidth: '100%',
+        // imageHeight:
+        imageAlt: 'imagen de una camara fotografica',
+    });
+}, 11000);
 
 //! MATERIAL DE APOYO EJEMPLOS NO ACTIVAR 👇👇👇👇👇👇👇👇
 // localStorage.setItem("Nombre", inputNombre.value)  //*********ALMACENA LOS DATOS DEL INPUT */

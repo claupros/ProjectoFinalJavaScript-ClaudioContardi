@@ -17,20 +17,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     /> -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+  
     <script defer src="js/proyectoFinalContardi.js"></script>
     <script defer src="js/variables.js"></script>
     <script defer src="js/dayjs.min.js"></script>
+    <script defer src="js/alertas.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <h1 id="apartado1">
       <span id="titulo" class="icon icon-library">BANCO</span>
     </h1>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class=" header">
+      <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Menu</a>
+          <a class=" navbar-brand" href="#">Menu</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -80,9 +81,9 @@
         </div>
       </nav>
     </header>
-    <section class="rowt container container-fluid col-12">
-      <div class="sectionContacto col-12">
-        <form action="enviar.php" method="post">
+    <section class=" rowt container container-fluid col-12">
+      <div  col-12">
+        <form class="sectionContacto action="enviar.php" method="post">
           <h1 id="tituloDos" class="h2Contacto">PRESTAMO</h1>
           <input class="form-select"
             type="text"
@@ -124,8 +125,11 @@
           >
         </form>
       </div>
+      <div id="contenido" class="parent absolute row bottom-0">
+         <!--sector de JSON-->
+      </div>
     </section>
-    <footer class="text-center text-white" style="background-color: #f1f1f1">
+    <footer class="text-center text-white">
       <!-- Copyright -->
       <div>
         © 2020 Copyright:
