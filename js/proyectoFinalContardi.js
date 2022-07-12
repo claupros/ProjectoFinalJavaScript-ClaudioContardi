@@ -73,10 +73,10 @@ function calcularCronograma(monto, interes, cuotas) {
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         obtenerContenido(URL)
-    }, 5000);
-    setInterval(() => {
-        obtenerContenido(URL)
-    }, 10000);
+    }, 0);
+    // setInterval(() => {
+    //     obtenerContenido(URL)
+    // }, 10000);
 })
 
 const retornoCardContenido = (contenido) => {
