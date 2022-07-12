@@ -84,8 +84,7 @@ const retornoCardContenido = (contenido) => {
     const { imagen, titulo, genero } = contenido
     return `<div class="anu card text-dark bg-warning mb-3" style="max-width: 18rem;">
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    <img src=${imagen} class="rounded me-2" alt="...">
-     
+    <img src='${imagen}' class="rounded me-2" alt="publicidad">
      <div class="card-body">
        <h5 class="card-title"> ${titulo}</h5>
        <a href="#" class="btn btn-primary">Comprar ahora</a>
