@@ -1,14 +1,14 @@
 [
    {
       "id": 1,
-      "imagen": "/img/camara.png",
+      "imagen": "img/camara.png",
       "titulo": "Camara Sony Pro",
       "categoria": "Fotografias",
       "genero": "Anuncio"   
    },
    {
       "id": 2,
-      "imagen": "/img/alimento.png",
+      "imagen": "img/alimento.png",
       "titulo": "Alimento Balanceado",
       "categoria": "Alimentos Caninos",
       "genero": "Anuncio"  
