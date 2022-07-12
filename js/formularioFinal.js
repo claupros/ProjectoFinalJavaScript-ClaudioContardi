@@ -114,7 +114,7 @@ Swal.fire({   /** anuncio */
     closeButtonAriaLabel: 'cerrar esta alerta',
 
 
-    imageUrl: 'img/Camara.png',
+    imageUrl: 'img/camara.png',
     imageWidth: '100%',
     // imageHeight:
     imageAlt: 'imagen de una camara fotografica',
