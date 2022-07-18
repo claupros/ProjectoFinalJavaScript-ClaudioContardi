@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -89,8 +87,8 @@ form {
   margin: 0;
   font-size: 40px;
 }
-.h2final:hover{
-  animation:heartBeat ;
+.h2final:hover {
+  animation: heartBeat;
   animation-duration: 2s;
 }
 
@@ -152,9 +150,9 @@ footer {
   transition: all 0.2s ease 0s;
   animation: 1.5s ease 0s 1 normal none running fadeIn;
 }
- 
+
 .parent {
-  position: relative; 
+  position: relative;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -170,17 +168,17 @@ footer {
   height: 15%;
 }
 
- .anim ,.index{
-  text-align: center; 
-  text-shadow: 0 0 5px white, 0 0 15px white, 0 0 30px white; 
+.anim,
+.index {
+  text-align: center;
+  text-shadow: 0 0 5px white, 0 0 15px white, 0 0 30px white;
 }
 
- .anim:hover {
-  animation: rubberBand ; 
-  animation-duration: 1s; 
-}
-.index:hover{
-  animation: bounce ;
+.anim:hover {
+  animation: rubberBand;
   animation-duration: 1s;
-} 
-
+}
+.index:hover {
+  animation: bounce;
+  animation-duration: 1s;
+}

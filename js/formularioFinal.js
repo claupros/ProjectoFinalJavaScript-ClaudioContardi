@@ -58,21 +58,22 @@ Swal.fire({
     footer: 'Anuncio',
     width: '300px',
     padding: '1rem',
-    background: '#fff',
+    background: '#ffc107',
     grow: false,
     backdrop: false,
     timer: 5000,
     timerProgressBar: true,
     toast: false,
-    position: 'bottom-end',
+    position: 'center-start',
     allowOutsideClick: false,
     allowEscapeKey: false,
     stopKeydownPropagation: false,
     showConfirmButton: false,
     showCancelButton: false,
     showCloseButton: true,
+    html: `<a href="https://www.mercadolibre.com.ar" target="_blank" class="anim btn btn-primary">Comprar ahora</a>`,
     closeButtonAriaLabel: 'cerrar esta alerta',
-    imageUrl: '../img/camara.png',
+    imageUrl: 'img/camarauno.jpg',
     imageWidth: '100%',
     imageAlt: 'imagen de una camara fotografica',
 });
@@ -84,7 +85,7 @@ setTimeout(() => {
         footer: 'Anuncio',
         width: '300px',
         padding: '1rem',
-        background: '#fff',
+        background: '#ffc107',
         grow: false,
         backdrop: false,
         timer: 5000,
@@ -97,20 +98,21 @@ setTimeout(() => {
         showConfirmButton: false,
         showCancelButton: false,
         showCloseButton: true,
+        html: `<a href="https://www.mercadolibre.com.ar" target="_blank" class="anim btn btn-primary">Comprar ahora</a>`,
         closeButtonAriaLabel: 'cerrar esta alerta',
         imageUrl: 'img/alimento.png',
         imageWidth: '100%',
         imageAlt: 'imagen de producto alimenticio',
     })
-}, 6000);
+}, 8000);
 setInterval(() => {
     Swal.fire({
-        title: 'Camara SONY',
+        title: 'Camara SONY PRO',
         icon: undefined,
         footer: 'Anuncio',
         width: '300px',
         padding: '1rem',
-        background: '#fff',
+        background: '#ffc107',
         grow: false,
         backdrop: false,
         timer: 5000,
@@ -123,11 +125,12 @@ setInterval(() => {
         showConfirmButton: false,
         showCancelButton: false,
         showCloseButton: true,
+        html: `<a href="https://www.mercadolibre.com.ar" target="_blank" class="anim btn btn-primary">Comprar ahora</a>`,
         closeButtonAriaLabel: 'cerrar esta alerta',
-        imageUrl: 'img/Camara.png',
+        imageUrl: 'img/camara.png',
         imageWidth: '100%',
         imageAlt: 'imagen de una camara fotografica',
     });
-}, 11000);
+}, 13000);
 
 
