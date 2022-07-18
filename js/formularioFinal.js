@@ -72,7 +72,7 @@ Swal.fire({
     showCancelButton: false,
     showCloseButton: true,
     closeButtonAriaLabel: 'cerrar esta alerta',
-    imageUrl: 'img/camara.png',
+    imageUrl: '../img/camara.png',
     imageWidth: '100%',
     imageAlt: 'imagen de una camara fotografica',
 });
