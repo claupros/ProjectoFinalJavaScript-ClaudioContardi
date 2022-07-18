@@ -53,7 +53,7 @@ recuperoDatosUsuario()
 
 //!-------------------------------👇SECTOR ANUNCIOS (NO JSON)-------------------------------/
 Swal.fire({
-    title: 'Camara SONY',
+    title: 'Camara SONY PRO',
     icon: undefined,
     footer: 'Anuncio',
     width: '300px',
@@ -127,7 +127,7 @@ setInterval(() => {
         showCloseButton: true,
         html: `<a href="https://www.mercadolibre.com.ar" target="_blank" class="anim btn btn-primary">Comprar ahora</a>`,
         closeButtonAriaLabel: 'cerrar esta alerta',
-        imageUrl: 'img/camara.png',
+        imageUrl: 'img/camarauno.jpg',
         imageWidth: '100%',
         imageAlt: 'imagen de una camara fotografica',
     });
