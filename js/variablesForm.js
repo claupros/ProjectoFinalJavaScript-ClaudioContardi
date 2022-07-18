@@ -1,11 +1,9 @@
-const tituloTres = document.getElementById('tituloTres')
-const inputNombre = document.querySelector("inputNombre")
-const inputApellido = document.querySelector("inputApellido")
-const inputTelefono = document.querySelector("inputTelefono")
-const inputEmail = document.querySelector("inputEmail")
-const btnSubmit = document.querySelector("submit")
-const finish = document.querySelector('finish')
-const menu = document.querySelector('menu')
-// const focoEnCampos = document.querySelector('.form-select')
-// const datosDeInput = document.getElementById ("inputNombre.value, inputApellido.value, inputTelefono.value, inputEmail.value")
+const tituloTres = document.getElementById('tituloTres');
+const inputNombre = document.querySelector('#inputNombre');
+const inputApellido = document.querySelector('#inputApellido');
+const inputTelefono = document.querySelector('#inputTelefono');
+const inputEmail = document.querySelector('#inputEmail');
+const menu = document.querySelector('menu');
+
+
 

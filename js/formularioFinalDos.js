@@ -1,28 +1,26 @@
-//!ejemplos de alertas no activar 👇👇👇👇👇👇👇👇
+//!--------------------------👇SECTOR CONTENIDO DOM----------------------------/
+function formDos() {  
+let contenidoDom2 = document.createElement('section');
+final.innerHTML += `<form action="#" class="color-formulario z-depth-2">
+          <div class="tablaFinal h2final" >
+             "¡¡Gracias por elegirnos!! Nos comunicaremos a la brevedad"
+          </div>
+         </form>`
+};
+formDos()
+//!-------------------------------👇SECTOR MENU-------------------------------/
+    Swal.fire({
+        background: "#D7E1EC",
+        title: '¡ Seleccione REGRESAR para volver a Home!👇',
+        color: 'whith',
+        timer: 7000,
+        timerProgressBar: true,
+        showConfirmButton: false,
+        toast: true,
+        position: 'top-start',
+        customClass: {
+            popup: 'popup-class',
+        }
+    })
 
-//  menu.addEventListener('click', ()=> {
-//      Swal.fire({
-//      title: 'Menu ILUSTRATIVO',
-//      width: 400,
-//      icon: 'warning',
-//      color: '#ffffff',
-//      confirmButtonText: 'ok'
-//  }) 
-
-//  })
-
-    // Swal.fire({
-    //     title: '¡Ir a MENU / INICIO para volver!',
-    //     allowOutsideClick: () => {
-    //          const popup = Swal.getPopup()
-    //          popup.classList.remove('swal2-show')
-    //          setTimeout(() => {
-    //              popup.classList.add('animate__animated', 'animate__headShake')
-    //          })
-    //          setTimeout(() => {
-    //              popup.classList.remove('animate__animated', 'animate__headShake')
-    //          }, 500)
-    //          return false
-    //      }
-    // })
-//!ejemplos de alertas no activar 👆👆👆👆👆👆👆👆
+    

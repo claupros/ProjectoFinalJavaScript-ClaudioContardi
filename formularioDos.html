@@ -23,11 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
       rel="stylesheet"
     />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
     <script defer src="js/formularioFinal.js"></script>
     <script defer src="js/formularioFinalDos.js"></script>
-    <script defer src="js/variablesForm.js"></script>
+    <script defer src="js/variablesFormDos.js"></script>
   </head>
-
   <body>
     <h1 id="apartado1">
       <span
@@ -36,7 +37,7 @@
         >BANCO</span
       >
     </h1>
-    <header>
+    <header class="header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Menu</a>
@@ -55,14 +56,14 @@
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="anim nav-link dropdown-toggle"
                   href="#"
                   id="navbarDarkDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  REGRESAR
                 </a>
                 <ul
                   id="menu"
@@ -79,23 +80,16 @@
         </div>
       </nav>
     </header>
-    <form action="#" class="color-formulario z-depth-2">
-     <div class="tablaFinal h2Contacto id="popup">
-        "Gracias por elegirnos, nos comunicaremos a la brevedad"
-     </div>
-    </form>
-    <footer class="text-center text-white" style="background-color: #f1f1f1">
-      <!-- Copyright -->
-      <div>
+    <section id="final" class="container container-fluid col-12"></section> <!--SECTOR CONTENIDO DOM JAVASCRIPT-->  
+    <footer class="text-center text-white">
+      <div><!-- Copyright -->
         © 2020 Copyright:
-        <p
-          >Desarrollador Claudio Contardi / Prof: Fernando Luna / Lenguaje:
-          JavaScript</p
-        >
+        <p>
+          Desarrollador Claudio Contardi / Prof: Fernando Luna / Lenguaje:
+          JavaScript
+        </p>
       </div>
-      <!-- Copyright -->
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

@@ -11,13 +11,12 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    /> -->
-  
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="js/proyectoFinalContardi.js"></script>
     <script defer src="js/variables.js"></script>
     <script defer src="js/dayjs.min.js"></script>
@@ -54,7 +53,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                SELECCIONE AQUI
                 </a>
                 <ul
                   id="menu"
@@ -101,7 +100,7 @@
             placeholder="Ingrese Interés Mensual %"
             required
           />
-          <table id="lista-tabla" class="tablaFinal table">
+          <table id="lista-tabla" class="tablaFinal table"><!--SECTOR CONTENIDO DOM JAVASCRIPT-->
             <thead>
               <tr>
                 <th>Fecha</th>
@@ -113,34 +112,29 @@
             </thead>
             <tbody></tbody>
           </table>
-          <a id="btnCalcular" class="btn btn-primary" href="#" role="button"
+          <a id="btnCalcular" class="anim btn btn-primary" href="#" role="button"
             >CALCULAR</a
           >
           <a
             id="irFormulario"
-            class="btn btn-primary"
+            class="anim btn btn-primary"
             href="formulario.html"
             role="button"
             >¡¡HAZ CLICK PARA SOLICITAR TU PRESTAMO!!</a
           >
         </form>
       </div>
-      <div id="contenido" class="parent absolute row bottom-0">
-         <!--sector de JSON-->
-      </div>
+      <div id="contenido" class="parent absolute row bottom-0"></div><!--SECTOR API de JSON-->
     </section>
-    <footer class="text-center text-white">
-      <!-- Copyright -->
-      <div>
+    <footer class="text-center text-white"> 
+      <div >
         © 2020 Copyright:
-        <p
+        <p class="animate__animated animate__bounce"
           >Desarrollador Claudio Contardi / Prof: Fernando Luna / Lenguaje:
           JavaScript</p
         >
       </div>
-      <!-- Copyright -->
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

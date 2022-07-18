@@ -29,7 +29,7 @@
         >BANCO</span
       >
     </h1>
-    <header>
+    <header class=" header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Menu</a>
@@ -55,7 +55,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  SELECCIONE AQUI 
                 </a>
                 <ul
                   id="menu"
@@ -83,11 +83,12 @@
       </nav>
     </header>
     <div></div>
-    <form
-      id="btnSubmit"
+    <section class=" rowt container container-fluid col-12">
+    <form onsubmit="submitForm(event)"
+      id="formulario"
       action="#"
       method="post"
-      class="needs-validation color-formulario"
+      class="formulario needs-validation color-formulario"
     >
       <h1 id="tituloDos" class="h2Contacto"></h1>
       <input
@@ -108,7 +109,7 @@
       />
       <input
         class="form-select"
-        type="text"
+        type="number"
         name="Telefono"
         id="inputTelefono"
         placeholder="Su teléfono móvil"
@@ -117,29 +118,22 @@
       <input
         class="form-select"
         type="text"
-        name="Correo"
+        name="Email"
         id="inputEmail"
         placeholder="Correo electrónico"
         required
       />
-      <a
-        class="container btn btn-primary"
-        id="finish"
-        href="formularioDos.html"
-        role="button"
-        >FINALIZAR</a
-      >
+       <button type="submit" class="anim btn btn-primary">ENVIAR</button>
     </form>
+     <section/>
     <footer class="text-center text-white">
-      <!-- Copyright -->
-      <div>
+      <div><!-- Copyright -->
         © 2020 Copyright:
         <p>
           Desarrollador Claudio Contardi / Prof: Fernando Luna / Lenguaje:
           JavaScript
         </p>
       </div>
-      <!-- Copyright -->
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

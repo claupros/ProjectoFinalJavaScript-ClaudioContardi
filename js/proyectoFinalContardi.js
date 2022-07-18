@@ -1,6 +1,6 @@
 
 
-//**SECTOR MENU */
+//!---------------------------------👇SECTOR MENU -------------------------------------/
 titulo.innerText = "BANCO AQUA"
 tituloDos.innerText = "PRESTAMO PERSONAL"
 
@@ -8,28 +8,28 @@ menu.addEventListener('click', () => {
     Swal.fire({
         background: "#D7E1EC",
         title: 'Menu ILUSTRATIVO',
-        // width: '25%',
         icon: 'warning',
         color: 'whith',
-        timer: 3000,
+        timer: 2000,
         showConfirmButton: false,
         toast: true,
-        position: 'top-end',
-        // confirmButtonText: 'ok',
+        position: 'top-start',
+        timerProgressBar: true,
         customClass: {
             popup: 'popup-class',
         }
-
     })
 })
-//**SECTOR TABLA DE RESULTADOS***/
+
+//!--------------------------👇SECTOR TABLA DE RESULTADOS----------------------------/
 btnCalcular.addEventListener('click', () => {
     //debugger
     monto.value === '' || cuotas.value === '' || interes.value === '' ? //*CODIGO SIMPLIFICADO*/
         Swal.fire({
             background: "#D7E1EC",
             title: '👉Complete los campos para continuar',
-            icon: 'error',
+            icon: 'warning',
+            toast: true,
             confirmButtonText: 'Ok',
             color: 'whith',
             with: '30%',
@@ -44,7 +44,6 @@ function calcularCronograma(monto, interes, cuotas) {
     while (llenarTabla.firstChild) {
         llenarTabla.removeChild(llenarTabla.firstChild);
     }
-
     let mesActual = dayjs().add(1, 'month')
     let amortizacionConstante, pagoInteres, cuota;
     amortizacionConstante = monto / cuotas;
@@ -52,10 +51,8 @@ function calcularCronograma(monto, interes, cuotas) {
         pagoInteres = monto * (interes / 100);
         cuota = amortizacionConstante + pagoInteres;
         monto = monto - amortizacionConstante;
-
         let fecha = mesActual.format('DD-MM-YYYY')
         mesActual = mesActual.add(1, 'month')
-
         const rowt = document.createElement('tr');
         rowt.innerHTML = `
             <td>${fecha}</td>
@@ -65,29 +62,27 @@ function calcularCronograma(monto, interes, cuotas) {
             <td>${monto.toFixed(2)}</td>
         `;
         llenarTabla.appendChild(rowt);
-
     }
 }
-//!----------------- SECTOR API------------------------*/
 
+//!--------------------------------👇 SECTOR API de JSON----------------------------/
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         obtenerContenido(URL)
-    }, 0);
-    // setInterval(() => {
-    //     obtenerContenido(URL)
-    // }, 10000);
+    }, 8000);
+    setInterval(() => {
+        obtenerContenido(URL)
+    }, 4000);
 })
 
 const retornoCardContenido = (contenido) => {
-    //debugger 
     const { imagen, titulo, genero } = contenido
-    return `<div class="anu card text-dark bg-warning mb-3" style="max-width: 18rem;">
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    return `<div class="index card text-dark bg-warning mb-3" style="max-width: 18rem;">
+    <button type="button" class=" btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     <img src=${imagen} class="rounded me-2" alt="publicidad">
      <div class="card-body">
        <h5 class="card-title"> ${titulo}</h5>
-       <a href="#" class="btn btn-primary">Comprar ahora</a>
+       <a href="https://www.mercadolibre.com.ar" target="_blank" class="btn btn-primary">Comprar ahora</a>
        <p class="card-text">${genero}</p>
      </div>
    </div>`
@@ -115,6 +110,7 @@ const obtenerContenido = (URL) => {
         .catch((error) => contenidoDOM.innerHTML = retornoCardError())
         .finally(() => retornoCardContenido(contenido))
 }
+
 
 
 

@@ -1,35 +1,29 @@
 titulo.innerText = "BANCO AQUA"
 tituloDos.innerText = "FINALIZAR PEDIDO"
-
-const focoEnCampos = () => {
-    const campos = document.querySelectorAll("input")
-    for (let campo of campos) {
-        if (campo.type != "button") {
-            campo.addEventListener("focus", () => campo.className = "form-select")
-            campo.addEventListener("blur", () => campo.className = "")
-        }
-    }
+//!-------------------------------👇SECTOR INPUT VACIO---------------------------------/
+ function submitForm(event){
+    event.preventDefault();
+     window.location="formularioDos.html";
 }
-focoEnCampos()
-
-menu.addEventListener('click', () => {  //*UTILIZANDO LIBRERIA PARA CUADRO DE ALERTA*/
+  
+//!-------------------------------👇SECTOR MENU-------------------------------/
+menu.addEventListener('click', () => {
     Swal.fire({
         background: "#D7E1EC",
         title: 'Menu ILUSTRATIVO',
-        // width: '25%',
         icon: 'warning',
         color: 'whith',
         timer: 3000,
         showConfirmButton: false,
         toast: true,
-        position: 'top-end',
-        // confirmButtonText: 'ok',
+        position: 'top-start',
         customClass: {
             popup: 'popup-class',
         }
     })
 })
 
+//!-------------------------------👇SECTOR STORAGE-------------------------------/
 document.addEventListener("button", (e) => {
     e.preventDefault()
     guardarDatosUsuario()
@@ -54,19 +48,13 @@ function recuperoDatosUsuario() {
         inputTelefono.value = datosUsuario.telefono
         inputEmail.value = datosUsuario.email
     }
-
 }
-
 recuperoDatosUsuario()
 
-//***** ALERTA 1 publicidad formularioFinal *******/
-
-Swal.fire({   /** anuncio */
+//!-------------------------------👇SECTOR ANUNCIOS (NO JSON)-------------------------------/
+Swal.fire({
     title: 'Camara SONY',
-    // text:
-    // html:'<div id="contenido" class="parent absolute row bottom-0"></div>',
     icon: undefined,
-    // confirmButtonText:
     footer: 'Anuncio',
     width: '300px',
     padding: '1rem',
@@ -79,55 +67,20 @@ Swal.fire({   /** anuncio */
     position: 'bottom-end',
     allowOutsideClick: false,
     allowEscapeKey: false,
-    // allowEnterKey:
     stopKeydownPropagation: false,
-    // input:
-    // inputPlaceholder:
-    // inputValue:
-    // inputOptions:
-    //  customClass:
-    // 	container:
-    // 	popup:
-    // 	header:
-    // 	title:
-    // 	closeButton:
-    // 	icon:
-    // 	image:
-    // 	content:
-    // 	input:
-    // 	actions:
-    // 	confirmButton:
-    // 	cancelButton:
-    // 	footer:	
-
     showConfirmButton: false,
-    // confirmButtonColor:
-    // confirmButtonAriaLabel:
-
     showCancelButton: false,
-    // cancelButtonText:
-    // cancelButtonColor:
-    // cancelButtonAriaLabel:
-
-    // buttonsStyling:
     showCloseButton: true,
     closeButtonAriaLabel: 'cerrar esta alerta',
-
-
     imageUrl: 'img/camara.png',
     imageWidth: '100%',
-    // imageHeight:
     imageAlt: 'imagen de una camara fotografica',
 });
 
-//***** ALERTA 2 publicidad formularioFinal *******/
 setTimeout(() => {
-    Swal.fire({   /** anuncio */
+    Swal.fire({
         title: 'Alimento Balanceado',
-        // text:
-        // html:'<div id="contenido" class="parent absolute row bottom-0"></div>',
         icon: undefined,
-        // confirmButtonText:
         footer: 'Anuncio',
         width: '300px',
         padding: '1rem',
@@ -140,54 +93,20 @@ setTimeout(() => {
         position: 'top-end',
         allowOutsideClick: false,
         allowEscapeKey: false,
-        // allowEnterKey:
         stopKeydownPropagation: false,
-        // input:
-        // inputPlaceholder:
-        // inputValue:
-        // inputOptions:
-        //  customClass:
-        // 	container:
-        // 	popup:
-        // 	header:
-        // 	title:
-        // 	closeButton:
-        // 	icon:
-        // 	image:
-        // 	content:
-        // 	input:
-        // 	actions:
-        // 	confirmButton:
-        // 	cancelButton:
-        // 	footer:	
-
         showConfirmButton: false,
-        // confirmButtonColor:
-        // confirmButtonAriaLabel:
-
         showCancelButton: false,
-        // cancelButtonText:
-        // cancelButtonColor:
-        // cancelButtonAriaLabel:
-
-        // buttonsStyling:
         showCloseButton: true,
         closeButtonAriaLabel: 'cerrar esta alerta',
-
-
         imageUrl: 'img/alimento.png',
         imageWidth: '100%',
-        // imageHeight:
         imageAlt: 'imagen de producto alimenticio',
     })
 }, 6000);
 setInterval(() => {
-    Swal.fire({   /** anuncio */
+    Swal.fire({
         title: 'Camara SONY',
-        // text:
-        // html:'<div id="contenido" class="parent absolute row bottom-0"></div>',
         icon: undefined,
-        // confirmButtonText:
         footer: 'Anuncio',
         width: '300px',
         padding: '1rem',
@@ -200,59 +119,15 @@ setInterval(() => {
         position: 'bottom-end',
         allowOutsideClick: false,
         allowEscapeKey: false,
-        // allowEnterKey:
         stopKeydownPropagation: false,
-        // input:
-        // inputPlaceholder:
-        // inputValue:
-        // inputOptions:
-        //  customClass:
-        // 	container:
-        // 	popup:
-        // 	header:
-        // 	title:
-        // 	closeButton:
-        // 	icon:
-        // 	image:
-        // 	content:
-        // 	input:
-        // 	actions:
-        // 	confirmButton:
-        // 	cancelButton:
-        // 	footer:	
-
         showConfirmButton: false,
-        // confirmButtonColor:
-        // confirmButtonAriaLabel:
-
         showCancelButton: false,
-        // cancelButtonText:
-        // cancelButtonColor:
-        // cancelButtonAriaLabel:
-
-        // buttonsStyling:
         showCloseButton: true,
         closeButtonAriaLabel: 'cerrar esta alerta',
-
-
         imageUrl: 'img/Camara.png',
         imageWidth: '100%',
-        // imageHeight:
         imageAlt: 'imagen de una camara fotografica',
     });
 }, 11000);
 
-//! MATERIAL DE APOYO EJEMPLOS NO ACTIVAR 👇👇👇👇👇👇👇👇
-// localStorage.setItem("Nombre", inputNombre.value)  //*********ALMACENA LOS DATOS DEL INPUT */
-// localStorage.setItem("Apellido", inputApellido.value)//*********ALMACENA LOS DATOS DEL INPUT */
-// localStorage.setItem("Telefono", inputTelefono.value)//*********ALMACENA LOS DATOS DEL INPUT */
-// localStorage.setItem("Email", inputEmail.value)//*********ALMACENA LOS DATOS DEL INPUT */
-
-// inputNombre.value = localStorage.getItem("Nombre")  //*********RECUPERA LOS DATOS GUARDADOS */
-// inputApellido.value = localStorage.getItem("Apellido")//*********RECUPERA LOS DATOS GUARDADOS */
-// inputTelefono.value = localStorage.getItem("Telefono")//*********RECUPERA LOS DATOS GUARDADOS */
-// inputEmail.value = localStorage.getItem("Email")//*********RECUPERA LOS DATOS GUARDADOS */
-// JSON.stringify //*(convierte a cadena de texto los datros guardados ejemplo: [object Object] lo pasa: {"nombre":"Esteban","apellido":"Rojas","telefono":"66666666","email":"quiensoy@loco.net"}*/
-// JSON.parse //*(el ejemplo de stringify pero a la inversa)*/
-//! MATERIAL DE APOYO EJEMPLOS NO ACTIVAR 👆👆👆👆👆👆👆👆
 
